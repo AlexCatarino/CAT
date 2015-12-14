@@ -1,0 +1,540 @@
+[ 20:55:17.3524033 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 20:55:17.1443914 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 20:55:16.6063607 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+[ 20:55:16.6063607 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 20:58:08.7182049 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 20:58:08.5111931 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 20:58:08.4791912 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 20:58:07.6191420 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 20:58:09.6632590 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 20:58:09.4342459 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 20:59:05.1354318 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 20:59:04.9214195 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 20:59:39.4743959 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 20:59:39.2423826 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 20:59:06.0584846 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 20:59:05.8504727 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 20:58:09.9142733 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 20:58:09.7022612 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 20:59:06.2964982 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 20:59:06.0884863 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 20:59:39.7114094 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 20:59:39.5053976 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 20:59:05.3684451 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 20:59:05.1604332 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 20:59:40.8684756 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 20:59:40.6234616 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 20:59:40.5944599 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 20:59:40.3864480 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:01:01.1940700 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:01:00.9680570 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:01:47.3837119 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:01:47.1546988 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:01:47.1286973 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:01:46.9096847 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:01:01.4380839 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:01:01.2180713 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:01:00.5260317 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:01:00.3120195 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:01:00.2710172 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:01:00.0420041 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:01:48.2997642 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:01:48.0917523 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:01:48.0587505 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:01:47.8497385 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:02:24.2748219 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:02:24.0488090 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:02:24.5168357 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:02:24.3068237 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:02:25.4258877 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:02:25.2158757 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:02:25.1888742 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:02:24.9808623 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:03:12.3505717 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:03:12.1415597 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:03:12.1175583 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:03:11.9025461 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:03:13.2926256 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:03:13.0796134 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:03:13.0486116 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:03:12.7995974 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:10:37.4560303 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:10:37.2420180 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:10:38.5440925 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:10:38.3350805 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:10:37.2160165 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:10:36.2799630 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:10:38.7781059 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:10:38.5690939 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:11:56.3055402 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:11:56.1005285 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:11:32.1791602 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:11:31.9551474 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:11:32.4061732 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:11:32.1981613 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:11:56.5615548 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:11:56.3345418 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:11:57.5336104 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:11:57.3235984 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:11:57.2995970 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:11:57.0865849 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:17:44.4154509 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:17:43.4073933 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:17:44.8614764 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:17:44.4444526 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:25:20.1255161 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:25:18.9424484 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:17:45.8085306 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:17:45.5985186 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:25:20.3615296 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:25:20.1495174 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:17:45.5735172 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:17:45.3635052 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:25:21.0045663 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:25:20.7795535 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:25:21.2725817 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:25:21.0315679 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:29:08.0765541 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:29:07.1745025 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:29:08.3585702 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:29:08.1145563 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:29:09.0006070 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:29:08.7915950 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:29:09.2366205 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:29:09.0286086 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:30:57.6848233 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:30:56.6177623 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:30:57.9468383 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:30:57.7188253 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:30:58.9178939 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:30:58.7088819 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:30:58.6788802 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:30:58.4698683 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:33:51.0237378 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:33:50.1326868 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:33:51.2637515 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:33:51.0517394 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:35:45.3002740 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:35:44.1612089 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:33:52.1868043 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:33:51.9807925 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:35:45.5522884 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:35:45.3282756 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:33:51.9507908 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:33:51.7437790 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:35:46.6043486 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:35:46.3953366 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:35:46.3663350 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:35:46.1563230 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:40:12.9255813 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:40:12.7155693 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:40:12.6835675 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:40:11.7635148 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:40:13.8686352 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:40:13.6566231 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:40:13.6266214 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:40:13.4176094 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:41:53.5223351 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:41:53.3093229 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:41:53.2783212 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:41:52.5872816 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:41:54.2083743 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:41:54.0003624 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:41:54.4523883 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:41:54.2433763 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:44:34.7145548 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:44:34.5045428 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:44:34.4695408 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:44:33.5604888 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:44:35.6546085 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:44:35.4455966 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:44:35.4115946 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:44:35.2025827 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:46:30.5221786 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:46:29.1711013 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:46:30.7651925 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:46:30.5551805 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:48:32.2311399 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:48:31.3020868 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:46:31.5322364 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:46:31.2892225 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:46:31.7912512 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:46:31.5652383 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:48:32.4861545 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:48:32.2761425 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:48:33.2221966 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:48:33.0151848 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:49:03.7029400 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:49:03.4659265 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:49:03.9459539 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:49:03.7369420 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:48:33.4662106 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:48:33.2541985 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:49:04.7810017 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:49:04.5729898 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:49:05.0400165 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:49:04.8150036 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:50:32.2090023 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:50:31.9959901 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:50:32.4450158 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:50:32.2360038 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:50:33.5990818 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:50:33.3910699 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:50:33.3570680 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:50:33.1490561 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:51:31.8144115 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:51:31.5983992 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:51:32.1004279 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:51:31.8444132 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:51:32.8764723 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:51:32.6444590 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:51:33.1134858 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:51:32.9054739 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:54:21.4431137 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:54:20.4730582 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:54:21.6861276 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:54:21.4751156 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:54:22.3631664 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:54:22.1471540 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:55:29.2719933 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:55:28.9529751 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:54:22.6041801 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:54:22.3941681 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:55:29.5060067 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:55:29.2989949 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:58:57.7949201 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:58:57.5849081 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:55:30.5080640 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:55:30.2690503 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:58:57.5559065 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:58:56.3788392 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:55:30.2250478 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:55:30.0110356 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:58:58.6119669 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:58:58.4029549 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.
+[ 21:58:58.8639813 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Selecione uma estratégia e pressione F9 para otimizar.
+[ 21:58:58.6409685 ]: No connection string named 'DatabaseContext' could be found in the application config file.
+Pressione F4 para abrir pasta com resultados des simulações.
+Pressione F5 para abrir pasta com logs.

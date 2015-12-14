@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E02AA183-F01F-422B-ACBD-0D03937098B7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CAT.Model</RootNamespace>
+    <AssemblyName>CAT.Model</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DdeNet">
+      <HintPath>..\packages\DdeNet.1.0.0\lib\net45\DdeNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Hammock.ClientProfile, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c148cfba29ed1a4d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\TweetSharp.2.3.1\lib\4.0\Hammock.ClientProfile.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.ROBOTRADERLib">
+      <HintPath>..\packages\Interop.ROBOTRADERLib.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.SignalR.Client, Version=2.1.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.SignalR.Client.2.1.2\lib\net45\Microsoft.AspNet.SignalR.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.SignalR.Core, Version=2.1.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.SignalR.Core.2.1.2\lib\net45\Microsoft.AspNet.SignalR.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.SignalR.SystemWeb, Version=2.1.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.SignalR.SystemWeb.2.1.2\lib\net45\Microsoft.AspNet.SignalR.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.Edm, Version=5.6.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.Data.Edm.5.6.2\lib\net40\Microsoft.Data.Edm.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.OData, Version=5.6.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.Data.OData.5.6.2\lib\net40\Microsoft.Data.OData.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.Services.Client, Version=5.6.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.Data.Services.Client.5.6.2\lib\net40\Microsoft.Data.Services.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.Owin.3.0.0\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.3.0.0\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.Owin.Security.3.0.0\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Configuration, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.WindowsAzure.ConfigurationManager.2.0.3\lib\net40\Microsoft.WindowsAzure.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Storage, Version=4.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\WindowsAzure.Storage.4.3.0\lib\net40\Microsoft.WindowsAzure.Storage.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.6.0.5\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Services.Client" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Spatial, Version=5.6.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\System.Spatial.5.6.2\lib\net40\System.Spatial.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TA-Lib-Core">
+      <HintPath>..\packages\TA-Lib-Core.dll</HintPath>
+    </Reference>
+    <Reference Include="TweetSharp, Version=2.0.0.0, Culture=neutral, PublicKeyToken=c148cfba29ed1a4d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\TweetSharp.2.3.1\lib\4.0\TweetSharp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ExternalInterface\API_CMA.cs" />
+    <Compile Include="ExternalInterface\API_Azure.cs" />
+    <Compile Include="ExternalInterface\IExternalComm.cs" />
+    <Compile Include="ExternalInterface\JSONMessages\CancelOrderRequest.cs" />
+    <Compile Include="ExternalInterface\JSONMessages\CancelOrderResponse.cs" />
+    <Compile Include="ExternalInterface\JSONMessages\Candle.cs" />
+    <Compile Include="ExternalInterface\JSONMessages\CandleRequest.cs" />
+    <Compile Include="ExternalInterface\JSONMessages\CandleResponse.cs" />
+    <Compile Include="ExternalInterface\JSONMessages\CandleUnsubscribeRequest.cs" />
+    <Compile Include="ExternalInterface\JSONMessages\CandleUnsubscribeResponse.cs" />
+    <Compile Include="ExternalInterface\JSONMessages\CandleUpdate.cs" />
+    <Compile Include="ExternalInterface\JSONMessages\Command.cs" />
+    <Compile Include="ExternalInterface\JSONMessages\Disconnect.cs" />
+    <Compile Include="ExternalInterface\JSONMessages\ExecutionReport.cs" />
+    <Compile Include="ExternalInterface\JSONMessages\JSONSerializer.cs" />
+    <Compile Include="ExternalInterface\JSONMessages\KeepAlive.cs" />
+    <Compile Include="ExternalInterface\JSONMessages\NewOrderRequest.cs" />
+    <Compile Include="ExternalInterface\JSONMessages\NewOrderResponse.cs" />
+    <Compile Include="ExternalInterface\JSONMessages\NewStopGainLossOrderRequest.cs" />
+    <Compile Include="ExternalInterface\JSONMessages\NewStopGainLossOrderResponse.cs" />
+    <Compile Include="ExternalInterface\JSONMessages\NewStopOrderRequest.cs" />
+    <Compile Include="ExternalInterface\JSONMessages\NewStopOrderResponse.cs" />
+    <Compile Include="ExternalInterface\JSONMessages\OrderListRequest.cs" />
+    <Compile Include="ExternalInterface\JSONMessages\OrderListResponse.cs" />
+    <Compile Include="ExternalInterface\JSONMessages\PositionItem.cs" />
+    <Compile Include="ExternalInterface\JSONMessages\PositionRequest.cs" />
+    <Compile Include="ExternalInterface\JSONMessages\PositionResponse.cs" />
+    <Compile Include="ExternalInterface\JSONMessages\Quote.cs" />
+    <Compile Include="ExternalInterface\JSONMessages\QuoteRequest.cs" />
+    <Compile Include="ExternalInterface\JSONMessages\QuoteResponse.cs" />
+    <Compile Include="ExternalInterface\JSONMessages\QuoteUnsubscribeRequest.cs" />
+    <Compile Include="ExternalInterface\JSONMessages\QuoteUnsubscribeResponse.cs" />
+    <Compile Include="ExternalInterface\JSONMessages\QuoteUpdate.cs" />
+    <Compile Include="ExternalInterface\JSONMessages\Security.cs" />
+    <Compile Include="ExternalInterface\API_QCB.cs" />
+    <Compile Include="ExternalInterface\API_Twitter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Strategies\ACap001.cs" />
+    <Compile Include="Strategies\ACap004.cs" />
+    <Compile Include="Strategies\ACap003.cs" />
+    <Compile Include="Strategies\DCap003.cs" />
+    <Compile Include="Strategies\DCap002.cs" />
+    <Compile Include="Strategies\DCap001.cs" />
+    <Compile Include="Strategies\ACap002.cs" />
+    <Compile Include="Strategies\AIMA.cs" />
+    <Compile Include="Strategies\OCandleSpread.cs" />
+    <Compile Include="Strategies\OCandle_v2.cs" />
+    <Compile Include="Strategies\SProp001.cs" />
+    <Compile Include="Strategies\ICap003.cs" />
+    <Compile Include="Strategies\IProp001.cs" />
+    <Compile Include="Strategies\ICap002.cs" />
+    <Compile Include="Strategies\OCandleDJA.cs" />
+    <Compile Include="Strategies\Empty.cs" />
+    <Compile Include="Strategies\IBand.cs" />
+    <Compile Include="Strategies\ICandle.cs" />
+    <Compile Include="Strategies\ICap001.cs" />
+    <Compile Include="Strategies\OCandle.cs" />
+    <Compile Include="Strategies\SProp002.cs" />
+    <Compile Include="Strategies\Strategy.cs" />
+    <Compile Include="SystemManager\Client.cs" />
+    <Compile Include="SystemManager\Candle.cs" />
+    <Compile Include="SystemManager\Asset.cs" />
+    <Compile Include="SystemManager\CorporateEvents.cs" />
+    <Compile Include="SystemManager\ObservableObject.cs" />
+    <Compile Include="SystemManager\Setup.cs" />
+    <Compile Include="SystemManager\SystemManager.cs" />
+    <Compile Include="SystemManager\Tick.cs" />
+    <Compile Include="SystemManager\Trade.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Scripts\jquery-2.1.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Optimera-06-06-2013\Optimera\Optimera.csproj">
+      <Project>{6aa47ddd-96cb-4ff1-be47-58a48172a6d3}</Project>
+      <Name>Optimera</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Scripts\jquery-2.1.1.intellisense.js" />
+    <Content Include="Scripts\jquery-2.1.1.js" />
+    <Content Include="Scripts\jquery-2.1.1.min.js" />
+    <Content Include="Scripts\jquery.signalR-2.1.2.js" />
+    <Content Include="Scripts\jquery.signalR-2.1.2.min.js" />
+    <Content Include="Strategies\blackscholes.js" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

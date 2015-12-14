@@ -1,0 +1,9 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="AsyncGetBovespa.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="StorageConnectionString" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">DefaultEndpointsProtocol=https;AccountName=giminidatabase;AccountKey=8Kt6cGFM4lYsSUvm1i8uBbazEVLV+t1F92log2T8AnHA/bdKxPvcFUG/f9PbsqZWaEn+YZmfpV/pV+O/sRrHeA==</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

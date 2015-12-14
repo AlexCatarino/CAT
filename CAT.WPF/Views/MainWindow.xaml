@@ -1,0 +1,576 @@
+﻿<Window x:Class="CAT.WPF.Views.MainWindow" WindowStartupLocation="CenterScreen"
+        Icon="/CAT.WPF;component/Resources/capital.ico" Language="pt-BR"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:viewModels="clr-namespace:CAT.WPF.ViewModels"
+        xmlns:converters="clr-namespace:CAT.WPF.Converters"
+        Height="auto" MinWidth="1200" MaxWidth="1200" 
+        Title="Capital Investimentos">
+    <Window.Resources>
+        <viewModels:MainWindowViewModel x:Key="WindowsViewModel"/>
+        <converters:IsOnline x:Key="IsOnline" />
+        <converters:IsBuyOrSell x:Key="IsBuyOrSell" />
+        <converters:CountToVisibility x:Key="CountToVisibility" />
+        <converters:CountToInvisibility x:Key="CountToInvisibility" />
+
+        <!-- DataGrid Background -->
+        <LinearGradientBrush x:Key="BlueLightGradientBrush" StartPoint="0,0" EndPoint="0,1">
+            <GradientStop Offset="0" Color="#FFEAF3FF"/>
+            <GradientStop Offset="0.654" Color="#FFC0DEFF"/>
+            <GradientStop Offset="1" Color="#FFC0D9FB"/>
+        </LinearGradientBrush>
+
+        <!-- DatGrid style -->
+        <Style TargetType="{x:Type DataGrid}">
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="Margin" Value="5" />
+            <Setter Property="BorderBrush" Value="#FFA6CCF2" />
+            <Setter Property="HorizontalGridLinesBrush" Value="Transparent" />
+            <Setter Property="VerticalGridLinesBrush" Value="#FFD3D0" />
+            <Setter Property="RowHeaderWidth" Value="0" />
+            <Setter Property="CanUserResizeColumns" Value="False"/>
+            <Setter Property="AutoGenerateColumns" Value="False"/>
+        </Style>
+
+        <Style TargetType="{x:Type DataGridColumnHeader}">
+            <Setter Property="Padding" Value="5"/>
+            <Setter Property="Background" Value="WhiteSmoke"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        </Style>
+        
+    </Window.Resources>
+    
+    <DockPanel DataContext="{Binding Source={StaticResource WindowsViewModel} }">
+
+        <DockPanel.InputBindings>
+            <KeyBinding Command="{Binding SaveLogCommand}" Gesture="CTRL+S"/>
+            <KeyBinding Command="{Binding PingCommand}" Key="F3"/>
+            <KeyBinding Command="{Binding OpenResDirectoryCommand}" Key="F4"/>
+            <KeyBinding Command="{Binding OpenLogDirectoryCommand}" Key="F5"/>
+            <KeyBinding Command="{Binding ClearMemoryCommand}" Key="F6"/>
+            <KeyBinding Command="{Binding PrintPortfolioCommand}" Key="F7"/>
+        </DockPanel.InputBindings>
+        
+        <DockPanel DockPanel.Dock="Bottom" LastChildFill="False"  Margin="5,0,5,5">
+            <StackPanel DockPanel.Dock="Right" Orientation="Horizontal">
+                <TextBlock FontSize="16" FontWeight="ExtraBold" TextWrapping="Wrap" ToolTip="{Binding FeedStatus}" Foreground="{Binding FeedColor}" Text="{Binding LastSymbol}"/>
+                <TextBlock FontSize="16" FontWeight="ExtraBold" TextWrapping="Wrap" ToolTip="{Binding OmsStatus}" Background="{Binding OmsColor}" Text=" OMS "/>
+            </StackPanel>
+            <StackPanel DockPanel.Dock="Left" Orientation="Horizontal">
+                <TextBox ToolTip="Id do utilizador" Width="291" VerticalContentAlignment="Bottom" MaxLength="39" Text="{Binding User.Id}" FontFamily="Courier New" FontWeight="ExtraBold" IsReadOnly="True"/>
+            </StackPanel>
+        </DockPanel>
+
+        <DockPanel DockPanel.Dock="Top" MaxHeight="300" 
+                   Visibility="{Binding SetupsCollection.Count, Converter ={StaticResource CountToVisibility}}">
+            
+            <DockPanel LastChildFill="False" DockPanel.Dock="Top" Margin="5">
+                <TextBlock DockPanel.Dock="Left" Text="Estratégias" FontFamily="Cambria" FontSize="22" Foreground="#FF437CA6" ToolTip="{Binding Version}"/>
+                <Button DockPanel.Dock="Right" Width="80" Content="{Binding TradingButton}" Command="{Binding SwitchCommand}" />
+                <Button DockPanel.Dock="Right" Width="80" Content="Backtest" Command="{Binding BacktestCommand}" />
+                <Button DockPanel.Dock="Right" Width="80" Content="Zerar trade" Command="{Binding CloseTradeCommand}"/>
+            </DockPanel>
+
+            <DataGrid DockPanel.Dock="Top" CanUserAddRows="False" CanUserDeleteRows="False" CanUserReorderColumns="True"
+                      ItemsSource="{Binding SetupsCollection, Mode=TwoWay}" SelectedItem="{Binding SelectedSetup}">
+
+                <DataGrid.InputBindings>
+                    <KeyBinding Key="F9" Command="{Binding OptimizationCommand}"/>
+                </DataGrid.InputBindings>
+
+                <DataGrid.RowStyle>
+                    <Style TargetType="{x:Type DataGridRow}">
+                        <Setter Property="Background" Value="{Binding Online, Converter ={StaticResource IsOnline}}"/>
+                    </Style>
+                </DataGrid.RowStyle>
+
+                <DataGrid.Columns>
+                    <DataGridTextColumn Width="40" Header="Ord." Binding="{Binding How2Trade}">
+                        <DataGridTextColumn.HeaderStyle>
+                            <Style TargetType="{x:Type DataGridColumnHeader}">
+                                <Setter Property="Width" Value="40"/>
+                                <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                                <Setter Property="ToolTip">
+                                    <Setter.Value>
+                                        <StackPanel>
+                                            <TextBlock Text="Como enviar ordens: "/>
+                                            <TextBlock Text="0: Não enviar ordem;"/>
+                                            <TextBlock Text="1: Enviar ordem limite (preço definido);"/>
+                                            <TextBlock Text="6: Enviar ordem à mercado."/>
+                                        </StackPanel>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </DataGridTextColumn.HeaderStyle>
+                        <DataGridTextColumn.ElementStyle>
+                            <Style TargetType="{x:Type TextBlock}">
+                                <Setter Property="HorizontalAlignment" Value="Center"/>
+                            </Style>
+                        </DataGridTextColumn.ElementStyle>
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Width="40" Header="ID" Binding="{Binding SetupId, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" IsReadOnly="True">
+                        <DataGridTextColumn.HeaderStyle>
+                            <Style TargetType="{x:Type DataGridColumnHeader}">
+                                <Setter Property="Width" Value="40"/>
+                                <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                                <Setter Property="ToolTip" Value="ID do setup"/>
+                            </Style>
+                        </DataGridTextColumn.HeaderStyle>
+                        <DataGridTextColumn.ElementStyle>
+                            <Style TargetType="{x:Type TextBlock}">
+                                <Setter Property="FontWeight" Value="ExtraBold"/>
+                                <Setter Property="HorizontalAlignment" Value="Center"/>
+                            </Style>
+                        </DataGridTextColumn.ElementStyle>
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Width="80" Header="Nome" Binding="{Binding Name}" IsReadOnly="False">
+                        <DataGridTextColumn.HeaderStyle>
+                            <Style TargetType="{x:Type DataGridColumnHeader}">
+                                <Setter Property="Width" Value="80"/>
+                                <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                                <Setter Property="ToolTip" Value="Nome da estratégia"/>
+                            </Style>
+                        </DataGridTextColumn.HeaderStyle>
+                        <DataGridTextColumn.ElementStyle>
+                            <Style TargetType="{x:Type TextBlock}">
+                                <Setter Property="HorizontalAlignment" Value="Center"/>
+                            </Style>
+                        </DataGridTextColumn.ElementStyle>
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Width="80" Header="Gráfico" Binding="{Binding TimeFrame}" IsReadOnly="False">
+                        <DataGridTextColumn.HeaderStyle>
+                            <Style TargetType="{x:Type DataGridColumnHeader}">
+                                <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                                <Setter Property="ToolTip" Value="Tempo gráfico em minutos (0 para diário)"/>
+                            </Style>
+                        </DataGridTextColumn.HeaderStyle>
+                        <DataGridTextColumn.ElementStyle>
+                            <Style TargetType="{x:Type TextBlock}">
+                                <Setter Property="HorizontalAlignment" Value="Center"/>
+                            </Style>
+                        </DataGridTextColumn.ElementStyle>
+                    </DataGridTextColumn>                   
+                    <DataGridTextColumn Width="80" Header="Ativo" Binding="{Binding Symbol}">
+                        <DataGridTextColumn.HeaderStyle>
+                            <Style TargetType="{x:Type DataGridColumnHeader}">
+                                <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                                <Setter Property="ToolTip" Value="Ativo"/>
+                            </Style>
+                        </DataGridTextColumn.HeaderStyle>
+                        <DataGridTextColumn.ElementStyle>
+                            <Style TargetType="{x:Type TextBlock}">
+                                <Setter Property="HorizontalAlignment" Value="Center"/>
+                                <Setter Property="FontWeight" Value="ExtraBold"/>
+                            </Style>
+                        </DataGridTextColumn.ElementStyle>
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Header="C / V" Binding="{Binding Allow}">
+                        <DataGridTextColumn.HeaderStyle>
+                            <Style TargetType="{x:Type DataGridColumnHeader}">
+                                <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                                <Setter Property="ToolTip">
+                                    <Setter.Value>
+                                        <StackPanel>
+                                            <TextBlock Text="Tipo de trade: "/>
+                                            <TextBlock Text="C: somente compras;"/>
+                                            <TextBlock Text="V: somente vendas;"/>
+                                            <TextBlock Text="A: ambos."/>
+                                        </StackPanel>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </DataGridTextColumn.HeaderStyle>
+                        <DataGridTextColumn.ElementStyle>
+                            <Style TargetType="{x:Type TextBlock}">
+                                <Setter Property="HorizontalAlignment" Value="Center"/>
+                            </Style>
+                        </DataGridTextColumn.ElementStyle>
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Width="90" Binding="{Binding Capital}" Header="Capital">
+                        <DataGridTextColumn.HeaderStyle>
+                            <Style TargetType="{x:Type DataGridColumnHeader}">
+                                <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                                <Setter Property="ToolTip" Value="Capital a ser alocado pelo setup"/>
+                            </Style>
+                        </DataGridTextColumn.HeaderStyle>
+                        <DataGridTextColumn.ElementStyle>
+                            <Style TargetType="{x:Type TextBlock}">
+                                <Setter Property="HorizontalAlignment" Value="Right"/>
+                            </Style>
+                        </DataGridTextColumn.ElementStyle>
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Width="80" Header="Loss M." Binding="{Binding DynamicLoss, StringFormat={}{0:0.0000}}" IsReadOnly="False">
+                        <DataGridTextColumn.HeaderStyle>
+                            <Style TargetType="{x:Type DataGridColumnHeader}">
+                                <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                                <Setter Property="ToolTip" Value="Stop loss móvel, 1 = 100%"/>
+                            </Style>
+                        </DataGridTextColumn.HeaderStyle>
+                        <DataGridTextColumn.ElementStyle>
+                            <Style TargetType="{x:Type TextBlock}">
+                                <Setter Property="HorizontalAlignment" Value="Right"/>
+                            </Style>
+                        </DataGridTextColumn.ElementStyle>
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Width="80" Header="Loss Fixo" Binding="{Binding StaticLoss, StringFormat={}{0:0.0000}}" IsReadOnly="False">
+                        <DataGridTextColumn.HeaderStyle>
+                            <Style TargetType="{x:Type DataGridColumnHeader}">
+                                <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                                <Setter Property="ToolTip" Value="Stop loss fixo/inicial, 1 = 100%"/>
+                            </Style>
+                        </DataGridTextColumn.HeaderStyle>
+                        <DataGridTextColumn.ElementStyle>
+                            <Style TargetType="{x:Type TextBlock}">
+                                <Setter Property="HorizontalAlignment" Value="Right"/>
+                            </Style>
+                        </DataGridTextColumn.ElementStyle>
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Width="80" Header="Objetivo" Binding="{Binding StaticGain, StringFormat={}{0:0.0000}}" IsReadOnly="False">
+                        <DataGridTextColumn.HeaderStyle>
+                            <Style TargetType="{x:Type DataGridColumnHeader}">
+                                <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                                <Setter Property="ToolTip" Value="Objetivo, 1 = 100%"/>
+                            </Style>
+                        </DataGridTextColumn.HeaderStyle>
+                        <DataGridTextColumn.ElementStyle>
+                            <Style TargetType="{x:Type TextBlock}">
+                                <Setter Property="HorizontalAlignment" Value="Right"/>
+                            </Style>
+                        </DataGridTextColumn.ElementStyle>
+                    </DataGridTextColumn>                    
+                    <DataGridTextColumn Width="*" Header="Parâmetros" Binding="{Binding Parameters}">
+                        <DataGridTextColumn.HeaderStyle>
+                            <Style TargetType="{x:Type DataGridColumnHeader}">
+                                <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                                <Setter Property="ToolTip" Value="Parâmetros da estratégia"/>
+                            </Style>
+                        </DataGridTextColumn.HeaderStyle>
+                        <DataGridTextColumn.ElementStyle>
+                            <Style TargetType="{x:Type TextBlock}">
+                                <Setter Property="HorizontalAlignment" Value="Center"/>
+                            </Style>
+                        </DataGridTextColumn.ElementStyle>
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Width="70" Header="Duração" Binding="{Binding DayTradeDuration, StringFormat={}{0:0.00}}">
+                        <DataGridTextColumn.HeaderStyle>
+                            <Style TargetType="{x:Type DataGridColumnHeader}">
+                                <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                                <Setter Property="ToolTip" Value="Duração de um day-trade em horas (0 para swing-trade)"/>
+                            </Style>
+                        </DataGridTextColumn.HeaderStyle>
+                        <DataGridTextColumn.ElementStyle>
+                            <Style TargetType="{x:Type TextBlock}">
+                                <Setter Property="HorizontalAlignment" Value="Right"/>
+                            </Style>
+                        </DataGridTextColumn.ElementStyle>
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Width="70" Header="Spread" Binding="{Binding Slippage, StringFormat={}{0:0.00}}">
+                        <DataGridTextColumn.HeaderStyle>
+                            <Style TargetType="{x:Type DataGridColumnHeader}">
+                                <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                                <Setter Property="ToolTip" Value="Spread"/>
+                            </Style>
+                        </DataGridTextColumn.HeaderStyle>
+                        <DataGridTextColumn.ElementStyle>
+                            <Style TargetType="{x:Type TextBlock}">
+                                <Setter Property="HorizontalAlignment" Value="Right"/>
+                            </Style>
+                        </DataGridTextColumn.ElementStyle>
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Width="70" Header="Corret/" Binding="{Binding Discount, StringFormat={}{0:0}}">
+                        <DataGridTextColumn.HeaderStyle>
+                            <Style TargetType="{x:Type DataGridColumnHeader}">
+                                <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                                <Setter Property="ToolTip" Value="Desconto sobre corretagem em %"/>
+                            </Style>
+                        </DataGridTextColumn.HeaderStyle>
+                        <DataGridTextColumn.ElementStyle>
+                            <Style TargetType="{x:Type TextBlock}">
+                                <Setter Property="HorizontalAlignment" Value="Right"/>
+                            </Style>
+                        </DataGridTextColumn.ElementStyle>
+                    </DataGridTextColumn>
+                    <DataGridTemplateColumn Width="99" Header="Início">
+                        <DataGridTemplateColumn.HeaderStyle>
+                            <Style TargetType="{x:Type DataGridColumnHeader}">
+                                <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                                <Setter Property="ToolTip" Value="Data de início do basktest"/>
+                            </Style>
+                        </DataGridTemplateColumn.HeaderStyle>
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <DatePicker FontSize="13" Padding="0" SelectedDate="{Binding OfflineStartTime, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn >
+                </DataGrid.Columns>
+
+            </DataGrid>
+        </DockPanel>
+
+        <TabControl DockPanel.Dock="Bottom" Margin="5">
+
+            <TabItem>
+                <TabItem.Header>
+                    <TextBlock Text="Trades" TextAlignment="Center" ToolTip="{Binding CurrentPL}"
+                               Width="100" FontFamily="Cambria" Foreground="#FF437CA6" FontSize="18"/>
+                </TabItem.Header>
+                <DockPanel>
+                    <DataGrid x:Name="_grid" DockPanel.Dock="Top" CanUserAddRows="False" CanUserDeleteRows="False"
+                              ItemsSource="{Binding TradesCollection}" SelectedItem="{Binding SelectedTrade}">
+                        <DataGrid.RowStyle>
+                            <Style TargetType="{x:Type DataGridRow}">
+                                <Setter Property="Background" Value="{Binding State}"/>
+                            </Style>
+                        </DataGrid.RowStyle>
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Width="230" Header="Entrada" Binding="{Binding EntryTime, StringFormat={}{0:yy/MM/dd HH:mm:ss.fffffff}}" IsReadOnly="True">
+                                <DataGridTextColumn.HeaderStyle>
+                                    <Style TargetType="{x:Type DataGridColumnHeader}">
+                                        <Setter Property="Width" Value="230"/>
+                                        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                                    </Style>
+                                </DataGridTextColumn.HeaderStyle>
+                                <DataGridTextColumn.ElementStyle>
+                                    <Style TargetType="{x:Type TextBlock}">
+                                        <Setter Property="HorizontalAlignment" Value="Center"/>
+                                        <Setter Property="ToolTip">
+                                            <Setter.Value>
+                                                <StackPanel>
+                                                    <TextBlock Text="Setup ID: "/>
+                                                    <TextBlock Text="{Binding SetupId}"/>
+                                                </StackPanel>
+                                            </Setter.Value>
+                                        </Setter>
+                                    </Style>
+                                </DataGridTextColumn.ElementStyle>
+                            </DataGridTextColumn>
+                            <DataGridTextColumn Width="80" Header="Ativo" Binding="{Binding Symbol}" IsReadOnly="True">
+                                <DataGridTextColumn.HeaderStyle>
+                                    <Style TargetType="{x:Type DataGridColumnHeader}">
+                                        <Setter Property="Width" Value="80"/>
+                                        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                                    </Style>
+                                </DataGridTextColumn.HeaderStyle>
+                                <DataGridTextColumn.ElementStyle>
+                                    <Style TargetType="{x:Type TextBlock}">
+                                        <Setter Property="HorizontalAlignment" Value="Center"/>
+                                        <Setter Property="FontWeight" Value="ExtraBold"/>
+                                    </Style>
+                                </DataGridTextColumn.ElementStyle>
+                            </DataGridTextColumn>
+                            <DataGridTextColumn Header="C / V" Binding="{Binding Type, Converter ={StaticResource IsBuyOrSell}}" IsReadOnly="True">
+                                <DataGridTextColumn.HeaderStyle>
+                                    <Style TargetType="{x:Type DataGridColumnHeader}">
+                                        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                                    </Style>
+                                </DataGridTextColumn.HeaderStyle>
+                                <DataGridTextColumn.ElementStyle>
+                                    <Style TargetType="{x:Type TextBlock}">
+                                        <Setter Property="HorizontalAlignment" Value="Center"/>
+                                    </Style>
+                                </DataGridTextColumn.ElementStyle>
+                            </DataGridTextColumn>
+                            <DataGridTextColumn Width="90" Header="Quant." Binding="{Binding Qnty}" IsReadOnly="True">
+                                <DataGridTextColumn.HeaderStyle>
+                                    <Style TargetType="{x:Type DataGridColumnHeader}">
+                                        <Setter Property="Width" Value="90"/>
+                                        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                                    </Style>
+                                </DataGridTextColumn.HeaderStyle>
+                                <DataGridTextColumn.ElementStyle>
+                                    <Style TargetType="{x:Type TextBlock}">
+                                        <Setter Property="HorizontalAlignment" Value="Right"/>
+                                        <Setter Property="ToolTip">
+                                            <Setter.Value>
+                                                <StackPanel>
+                                                    <TextBlock Text="Capital: "/>
+                                                    <TextBlock Text="{Binding Capital}"/>
+                                                </StackPanel>
+                                            </Setter.Value>
+                                        </Setter>
+                                    </Style>
+                                </DataGridTextColumn.ElementStyle>
+                            </DataGridTextColumn>
+                            <DataGridTextColumn Width="80" Header="Valor" Binding="{Binding EntryValue, StringFormat={}{0:0.00}}">
+                                <DataGridTextColumn.HeaderStyle>
+                                    <Style TargetType="{x:Type DataGridColumnHeader}">
+                                        <Setter Property="Width" Value="80"/>
+                                        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                                    </Style>
+                                </DataGridTextColumn.HeaderStyle>
+                                <DataGridTextColumn.ElementStyle>
+                                    <Style TargetType="{x:Type TextBlock}">
+                                        <Setter Property="HorizontalAlignment" Value="Right"/>
+                                    </Style>
+                                </DataGridTextColumn.ElementStyle>
+                            </DataGridTextColumn>
+                            <DataGridTextColumn Width="80" Header="Stop Loss" Binding="{Binding StopLoss, StringFormat={}{0:0.00}, TargetNullValue=''}">
+                                <DataGridTextColumn.HeaderStyle>
+                                    <Style TargetType="{x:Type DataGridColumnHeader}">
+                                        <Setter Property="Width" Value="80"/>
+                                        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                                    </Style>
+                                </DataGridTextColumn.HeaderStyle>
+                                <DataGridTextColumn.ElementStyle>
+                                    <Style TargetType="{x:Type TextBlock}">
+                                        <Setter Property="HorizontalAlignment" Value="Right"/>
+                                        <Setter Property="ToolTip">
+                                            <Setter.Value>
+                                                <StackPanel>
+                                                    <TextBlock Text="Loss máximo: "/>
+                                                    <TextBlock Text="{Binding CurrentMaxLoss}"/>
+                                                </StackPanel>
+                                            </Setter.Value>
+                                        </Setter>
+                                   </Style>
+                                </DataGridTextColumn.ElementStyle>
+                            </DataGridTextColumn>
+                            <DataGridTextColumn Width="80" Header="Stop Gain" Binding="{Binding StopGain, StringFormat={}{0:0.00}, TargetNullValue=''}">
+                                <DataGridTextColumn.HeaderStyle>
+                                    <Style TargetType="{x:Type DataGridColumnHeader}">
+                                        <Setter Property="Width" Value="80"/>
+                                        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                                    </Style>
+                                </DataGridTextColumn.HeaderStyle>
+                                <DataGridTextColumn.ElementStyle>
+                                    <Style TargetType="{x:Type TextBlock}">
+                                        <Setter Property="HorizontalAlignment" Value="Right"/>
+                                        <Setter Property="ToolTip">
+                                            <Setter.Value>
+                                                <StackPanel>
+                                                    <TextBlock Text="Gain máximo: "/>
+                                                    <TextBlock Text="{Binding CurrentMaxGain}"/>
+                                                </StackPanel>
+                                            </Setter.Value>
+                                        </Setter>
+                                    </Style>
+                                </DataGridTextColumn.ElementStyle>
+                            </DataGridTextColumn>
+                            <DataGridTextColumn Width="*" Header="Saída" Binding="{Binding ExitTime, StringFormat={}{0:HH:mm:ss.fffffff}}" IsReadOnly="True">
+                                <DataGridTextColumn.HeaderStyle>
+                                    <Style TargetType="{x:Type DataGridColumnHeader}">
+                                        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                                    </Style>
+                                </DataGridTextColumn.HeaderStyle>
+                                <DataGridTextColumn.ElementStyle>
+                                    <Style TargetType="{x:Type TextBlock}">
+                                        <Setter Property="HorizontalAlignment" Value="Center"/>
+                                        <Setter Property="ToolTip" Value="{Binding ExitTime, StringFormat={}{0:yy/MM/dd}}"/>
+                                    </Style>
+                                </DataGridTextColumn.ElementStyle>
+                            </DataGridTextColumn>
+                            <DataGridTextColumn Width="80" Header="Último" Binding="{Binding ExitValue, StringFormat={}{0:0.00}}" IsReadOnly="True">
+                                <DataGridTextColumn.HeaderStyle>
+                                    <Style TargetType="{x:Type DataGridColumnHeader}">
+                                        <Setter Property="Width" Value="80"/>
+                                        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                                    </Style>
+                                </DataGridTextColumn.HeaderStyle>
+                                <DataGridTextColumn.ElementStyle>
+                                    <Style TargetType="{x:Type TextBlock}">
+                                        <Setter Property="HorizontalAlignment" Value="Right"/>
+                                        <Setter Property="ToolTip">
+                                            <Setter.Value>
+                                                <StackPanel>
+                                                    <TextBlock Text="Resultado: "/>
+                                                    <TextBlock Text="{Binding Result}"/>
+                                                </StackPanel>
+                                            </Setter.Value>
+                                        </Setter>
+                                    </Style>
+                                </DataGridTextColumn.ElementStyle>
+                            </DataGridTextColumn>
+                            <DataGridTextColumn Width="60" Header="%" Binding="{Binding NetResult, StringFormat={}{0:0.00}}" IsReadOnly="True">
+                                <DataGridTextColumn.HeaderStyle>
+                                    <Style TargetType="{x:Type DataGridColumnHeader}">
+                                        <Setter Property="Width" Value="60"/>
+                                        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                                    </Style>
+                                </DataGridTextColumn.HeaderStyle>
+                                <DataGridTextColumn.ElementStyle>
+                                    <Style TargetType="{x:Type TextBlock}">
+                                        <Setter Property="HorizontalAlignment" Value="Right"/>
+                                    </Style>
+                                </DataGridTextColumn.ElementStyle>
+                            </DataGridTextColumn>
+                            <DataGridTextColumn IsReadOnly="True" Width="174" Header="Observações" Binding="{Binding Obs}">
+                                <DataGridTextColumn.HeaderStyle>
+                                    <Style TargetType="{x:Type DataGridColumnHeader}">
+                                        <Setter Property="Width" Value="174"/>
+                                        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                                    </Style>
+                                </DataGridTextColumn.HeaderStyle>
+                                <DataGridTextColumn.ElementStyle>
+                                    <Style TargetType="{x:Type TextBlock}">
+                                        <Setter Property="HorizontalAlignment" Value="Right"/>
+                                    </Style>
+                                </DataGridTextColumn.ElementStyle>
+                            </DataGridTextColumn>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </DockPanel>
+            </TabItem>
+
+            <TabItem IsSelected="True">
+                <TabItem.Header>
+                    <TextBlock Text="Log" Width="100" TextAlignment="Center" FontFamily="Cambria" Foreground="#FF437CA6" FontSize="18" ToolTip="Pressione CTRL-S para salvar log."/>
+                </TabItem.Header>
+                <DockPanel>
+                    <TextBox DockPanel.Dock="Top" Text="{Binding Log}" Margin="5" VerticalScrollBarVisibility="Visible" TextWrapping="Wrap">
+                        <TextBox.InputBindings>
+                            <KeyBinding Key="End" Command="{Binding SaveCommand}"/>
+                        </TextBox.InputBindings>
+                    </TextBox>
+
+                </DockPanel>
+            </TabItem>
+
+            <TabItem>
+                <TabItem.Header>
+                    <TextBlock Text="Ajuda" Width="100" TextAlignment="Center" FontFamily="Cambria" Foreground="#FF437CA6" FontSize="18"/>
+                </TabItem.Header>
+                <DockPanel>
+                    <DockPanel DockPanel.Dock="Left">
+                        
+                        <DockPanel LastChildFill="False" DockPanel.Dock="Bottom" Margin="5">
+                            <TextBlock FontSize="16" TextWrapping="Wrap" Text="Clientes: "/>
+                            <TextBlock FontSize="16" TextWrapping="Wrap" Text="{Binding ClientCount}" ToolTip="{Binding ClientCapital}"/>
+                        </DockPanel>
+                        
+                        <DataGrid ItemsSource="{Binding BasketCollection}" SelectedItem="{Binding SelectedBasketItem}" Width="260" DockPanel.Dock="Top" HorizontalAlignment="Left" CanUserResizeColumns="False" ToolTip="Pressione Del para apagar item e End para salvar">
+
+                        <DataGrid.InputBindings>
+                            <KeyBinding Key="End" Command="{Binding SaveCommand}"/>
+                            <KeyBinding Key="Delete" Command="{Binding DeleteCommand}"/>
+                        </DataGrid.InputBindings>
+
+                        <DataGrid.Columns>
+                                <DataGridTextColumn Width="111" Header="Cliente" Binding="{Binding ClientID,UpdateSourceTrigger=PropertyChanged}">
+                                    <DataGridTextColumn.ElementStyle>
+                                        <Style TargetType="{x:Type TextBlock}">
+                                            <Setter Property="HorizontalAlignment" Value="Right"/>
+                                        </Style>
+                                    </DataGridTextColumn.ElementStyle>
+                                </DataGridTextColumn>
+                                <DataGridTextColumn Width="90" Header="Capital" Binding="{Binding Capital}">
+                                    <DataGridTextColumn.ElementStyle>
+                                        <Style TargetType="{x:Type TextBlock}">
+                                            <Setter Property="HorizontalAlignment" Value="Right"/>
+                                        </Style>
+                                    </DataGridTextColumn.ElementStyle>
+                                </DataGridTextColumn>
+                            <DataGridCheckBoxColumn Header="Mini?" Binding="{Binding IsMini}"/>
+                            <DataGridTextColumn Header="" Width="*"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                        
+                    </DockPanel>
+                    <WebBrowser DockPanel.Dock="Top" Margin="5" Source="https://catarino.blob.core.windows.net/catinstall/Ajuda.html"/>
+
+                </DockPanel>                
+            </TabItem>
+            
+        </TabControl>
+    </DockPanel>
+</Window>

@@ -1,0 +1,58 @@
+﻿@{
+    ViewBag.Title = "Operações";
+}
+@section featured {
+    <section class="featured">
+        <div class="content-wrapper">
+            <hgroup class="title">
+                <h2>@ViewBag.Title.</h2><br>
+                <h3>@ViewBag.Message</h3>
+            </hgroup>
+        </div>
+    </section>
+}
+    <div>
+        <span id="noTradesToMonitorMessage">Os Samurais da Centraltrader não estão monitorando nenhum trade de momento.</span>
+        
+        <table border="1" id="trades">
+            <thead>
+                <tr>
+                    <th data-bind="sort: { arr: trades, prop: 'EntryTime' }">Entrada</th>
+                    <th data-bind="sort: { arr: trades, prop: 'Symbol' }">Ativo</th>
+                    <th data-bind="sort: { arr: trades, prop: 'Type' }">C / V</th>
+                    <th data-bind="sort: { arr: trades, prop: 'EntryValue' }">Valor</th>
+                    <th data-bind="sort: { arr: trades, prop: 'StopLoss' }">Loss</th>
+                    <th data-bind="sort: { arr: trades, prop: 'StopGain' }">Objetivo</th>
+                    <th data-bind="sort: { arr: trades, prop: 'ExitTime' }">Saída</th>
+                    <th data-bind="sort: { arr: trades, prop: 'ExitValue' }">Último</th>
+                    <th data-bind="sort: { arr: trades, prop: 'Result' }">Resultado</th>
+                    <th data-bind="sort: { arr: trades, prop: 'NetResult' }">%</th>
+                    <th data-bind="sort: { arr: trades, prop: 'Obs' }">Obs.</th>
+                </tr>
+            </thead>
+            <tbody data-bind="foreach: trades">
+                <tr class="trade" data-bind="attr: { 'id': Id }">
+                    <td data-bind="text: EntryTime"></td>
+                    <td data-bind="text: Symbol"/>
+                    <td data-bind="text: Type"></td>
+                    <td data-bind="text: EntryValue"></td>
+                    <td data-bind="text: StopLoss"></td>
+                    <td data-bind="text: StopGain"></td>
+                    <td data-bind="text: ExitTime"></td>
+                    <td data-bind="text: ExitValue"></td>
+                    <td data-bind="text: Result"></td>
+                    <td data-bind="text: NetResult"></td>
+                    <td data-bind="text: Obs"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script type="text/javascript" src="../Scripts/moment.js"></script>   
+    <script type="text/javascript" src="../Scripts/jquery-2.0.2.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery.color-2.1.2.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery.signalR-1.1.2.js"></script>
+    <script type="text/javascript" src="../Scripts/knockout-2.2.1.js"></script>
+    <script type="text/javascript" src="../Scripts/knockout.mapping-latest.js"></script>
+    <script type="text/javascript" src="@Url.Content("~/signalr/hubs")"></script>
+    <script type="text/javascript" src="../Scripts/_ViewModel.js"></script>
